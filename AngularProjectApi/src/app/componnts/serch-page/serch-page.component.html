@@ -1,0 +1,39 @@
+<div class="container">
+<h1>Please Enter to Search:</h1>
+<hr>
+<br>
+<br>
+<form>
+  <input type="text" [(ngModel)]="ID" [ngModelOptions]="{standalone: true}" id="txtGameId"  placeholder="ID Game">&nbsp;
+  <input type="text" [(ngModel)]="Game_Name" [ngModelOptions]="{standalone: true}" placeholder="Name Game">&nbsp;
+  <input type="text" [(ngModel)]="Player1" [ngModelOptions]="{standalone: true}" placeholder="Player1">&nbsp;
+  <input type="text" [(ngModel)]="Player2" [ngModelOptions]="{standalone: true}" placeholder="Player2">&nbsp;
+  <input type="text" [(ngModel)]="Who_Won" [ngModelOptions]="{standalone: true}" placeholder="Who Won">
+  <br> <br> <br>
+  <input type="button" value="Search" (click)="onClickSearch()" class="btn btn-warning">
+</form>
+<br>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID Game</th>
+      <th scope="col">Name Game</th>
+      <th scope="col">Player1</th>
+      <th scope="col">Player2</th>
+      <th scope="col">Who Won</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <tr *ngFor="let game of tornirList ;"> 
+            <td id="tdGameId">{{game.ID}}</td>
+            <td id="tdGameName">{{game.Game_Name}}</td>
+            <td id="tdGamePlayer1">{{game.Player1}}</td>
+            <td id="tdGamePlayer2">{{game.Player2}}</td>
+            <td id="tdGameWon">{{game.Who_Won}}</td>
+    </tr>
+   
+  </tbody>
+</table>
+</div>

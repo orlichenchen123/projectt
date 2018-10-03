@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+    <script src="../../Scripts/myScript/GetPageJS.js"></script>
+    <title></title>
+</head>
+<body>
+    <p>Enter ID :</p>
+    <input id="txtId" type="number" min="1" />
+    <br />
+    <br />
+    <input id="btnGetAll" type="button" value="Get All" onclick="getTornir()" />
+    <input id="btnGetById" type="button" value="Get By Id" onclick="getByIdTornir()" />
+    <input id="btnGetJquery" type="button" value="Get Jquery" onclick="getTornirJquery()" />
+    <input id="btnGetJquery" type="button" value="Get By Id Jquery" onclick="getTornirByIdJquery()" />
+    <br />
+    <br />
+    <div id="results"></div>
+
+</body>
+</html>

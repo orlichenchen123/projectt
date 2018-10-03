@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="~/Scripts/myScript/pageGet1JS.js"></script>
+    <script src="~/Scripts/myScript/pageDeleteJS.js"></script>
+    <script src="~/Scripts/myScript/PagePostJS.js"></script>
+    <script src="~/Scripts/myScript/PagePut.js"></script>
+    <script src="~/Scripts/myScript/Rx.js"></script>
+    <script src="~/Scripts/myScript/PageObseveballJS.js"></script>
+    <script src="~/Scripts/myScript/PagePromiesJS.js"></script>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="~/Page/pageHome"> Home Page </a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            All Rest Methods
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="~/Page/pageGet1"> Get  </a></li>
+                            <li class="nav-item"><a href="~/Page/pagePost"> post </a></li>
+                            <li class="nav-item"><a href="~/Page/pagePut"> put  </a></li>
+                            <li class="nav-item"><a href="~/Page/pageDelete"> Delete  </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="~/Page/PageObseveball">Observables RXJS  </a></li>
+                    <li class="nav-item"><a href="#">Testing  </a></li>
+                    <li class="nav-item"><a href="http://localhost:53932/swagger/ui/index">Swagger  </a></li>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Testing
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="~/page/PagePromies"> promies  </a></li>
+                            <li class="nav-item"><a href="~/page/PageNjNoudTest"> nod js </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -orli cohen ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+  
+
+</body>
+</html>

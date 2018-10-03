@@ -1,0 +1,12 @@
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\TornirServer.dll
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\TornirServer.pdb
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\obj\Debug\TornirServer.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\obj\Debug\TornirServer.dll
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\obj\Debug\TornirServer.pdb
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\TornirServer.dll.config
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\EntityFramework.dll
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\EntityFramework.xml
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\obj\Debug\TornirServer.csprojResolveAssemblyReference.cache
+C:\Users\Account\Desktop\finalProjectApi\projectApi\ProjectApi\TornirServer\obj\Debug\TornirServer.csproj.CopyComplete

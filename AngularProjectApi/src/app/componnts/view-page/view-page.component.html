@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>View Page</h1>
+  <hr>
+<br>
+<br>
+<table id="tabelTornirGame" class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID Game</th>
+      <th scope="col">Name Game</th>
+      <th scope="col">Player1</th>
+      <th scope="col">Player2</th>
+      <th scope="col">Who Won</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let game of tornirList ;" (click)="onClickRow(game)"> 
+      <td id="tdGameId">{{game.ID}}</td>
+      <td id="tdGameName">{{game.Game_Name}}</td>
+      <td id="tdGamePlayer1">{{game.Player1}}</td>
+      <td id="tdGamePlayer2">{{game.Player2}}</td>
+      <td id="tdGameWon">{{game.Who_Won}}</td>
+    </tr>
+   
+  </tbody>
+</table>
+
+<div>
+  <form>
+  <input type="number" readonly="true" [(ngModel)]="ID" [ngModelOptions]="{standalone: true}" id="txtGameId"  placeholder="ID Game">&nbsp;
+  <input type="text" [(ngModel)]="Game_Name" [ngModelOptions]="{standalone: true}" id="txtGameName" placeholder="Name Game">&nbsp;
+  <input type="text" [(ngModel)]="Player1" [ngModelOptions]="{standalone: true}" id="txtGamePlayer1" placeholder="Player1">&nbsp;
+  <input type="text" [(ngModel)]="Player2" [ngModelOptions]="{standalone: true}" id="txtGamePlayer2" placeholder="Player2">&nbsp;
+  <input type="text" [(ngModel)]="Who_Won" [ngModelOptions]="{standalone: true}" id="txtGameWon" placeholder="Who Won">&nbsp;
+</form>
+  </div>
+<br>
+<br>
+<button type="button" id="btnUpDate" (click)="onClickUpdate()" class="btn btn-info">Updata</button>&nbsp;
+<button type="button" id="btnDeleteDate" (click)="onClickDelete()"  class="btn btn-danger">Delete</button>&nbsp;
+<button type="button" id="btnCreateNew" (click)="onClickNew()"  class="btn btn-success">Create New</button>&nbsp;
+<button type="button" id="btnCreateNew" (click)="onReafrech()"  class="btn btn-info">Reafresh</button>&nbsp;
+</div>

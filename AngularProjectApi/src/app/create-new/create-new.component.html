@@ -1,0 +1,16 @@
+<div class="container">
+  <p>
+    create-new Game :
+  </p>
+  
+  <div class="card-header" style="width: 18rem;">
+      <h5 class="card-title">New Game :</h5>
+      <input type="text" class="from-control" [(ngModel)]="game.Game_Name" placeholder="Name Game">
+      <input type="text" class="from-control" [(ngModel)]="game.Player1" placeholder="Player1">
+      <input type="text" class="from-control" [(ngModel)]="game.Player2" placeholder="Player2">
+      <input type="text" class="from-control" [(ngModel)]="game.Who_Won" placeholder="Who Won">
+      <br>
+     <button class="btn btn-primary from-control" (click)="onSave()">Save</button>
+    </div>
+  </div>
+
